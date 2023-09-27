@@ -1,22 +1,43 @@
+.survey-title{
+  text-align: center;
+}
+
+.survey-content{
+  background: #b6b2b2;
+}
+
+.survey-description{
+  text-align: center;
+}
+
 /* Стилі для контейнера */
 .survey-questions {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Стилі для елементів */
-  .question-box {
-    flex: 1;
-  }
+.question-box {
+  flex: 1;
+  width: 1200px;
+  background: #ece7e7;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
 
-  /* Стилі для заголовка */
-.question-title {
-    flex: 1; 
-  }
-  
-  /* Стилі для вмісту */
-  .question-content {
-    flex: 1; 
-  }
+/* Стилі для заголовка */
+.question-title {}
+
+/* Стилі для вмісту */
+.question-content {}
+
+.item-radio-button {
+  display: contents;
+}
+
+.item-radio-text {
+  display: contents;
+}
