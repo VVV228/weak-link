@@ -9,95 +9,98 @@
 </head>
 
 <body>
-    <div class="question-box">
-        <div class="question-title">
-            <h1>ПІБ</h1>
+    <div class="questions">
+        <div class="question-box">
+            <div class="question-title">
+                <h1>ПІБ</h1>
+            </div>
+            <div class="question-content">
+                <input type="text" placeholder="Введіть ваш текст">
+            </div>
         </div>
-        <div class="question-content">
-            <input type="text" placeholder="Введіть ваш текст">
-        </div>
-    </div>
-    <div class="question-box">
-        <div class="question-title">
-            <h1>Виберіть вашу стать</h1>
-        </div>
-        <div class="question-content">
+        <div class="question-box">
+            <div class="question-title">
+                <h1>Виберіть вашу стать</h1>
+            </div>
+            <div class="question-content">
 
 
-            <div class="list-radio">
-                <div class="item-radio">
-                    <div class="item-radio-button">
-                        <input type="radio" id="male" name="sex" value="male" />
-                    </div>
-                    <div class="item-radio-text">
-                        <div>Чоловіча</div>
-                    </div>
-                </div>
-            </div>
-            <div class="list-radio">
-                <div class="item-radio">
-                    <div class="item-radio-button">
-                        <input type="radio" id="female" name="sex" value="female" />
-                    </div>
-                    <div class="item-radio-text">
-                        <div>Жіноча</div>
+                <div class="list-radio">
+                    <div class="item-radio">
+                        <div class="item-radio-button">
+                            <input type="radio" id="male" name="sex" value="male" />
+                        </div>
+                        <div class="item-radio-text">
+                            <div>Чоловіча</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="list-radio">
-                <div class="item-radio">
-                    <div class="item-radio-button">
-                        <input type="radio" id="another" name="sex" value="another" />
+                <div class="list-radio">
+                    <div class="item-radio">
+                        <div class="item-radio-button">
+                            <input type="radio" id="female" name="sex" value="female" />
+                        </div>
+                        <div class="item-radio-text">
+                            <div>Жіноча</div>
+                        </div>
                     </div>
-                    <div class="item-radio-text">
-                        <div>Інше</div>
+                </div>
+                <div class="list-radio">
+                    <div class="item-radio">
+                        <div class="item-radio-button">
+                            <input type="radio" id="another" name="sex" value="another" />
+                        </div>
+                        <div class="item-radio-text">
+                            <div>Інше</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="question-box">
-        <div class="question-title">
-            <h1>Оберіть ваші уподобання щодо їжі:</h1>
-        </div>
-        <div class="question-content">
-            <div class="list-check">
-                <div class="item-check">
-                    <div class="item-check-button">
-                        <input type="checkbox" id="meat" name="food_preference[]" value="М'ясна їжа" />
-                    </div>
-                    <div class="item-check-text">
-                        <div>М'ясна їжа</div>
+        <div class="question-box">
+            <div class="question-title">
+                <h1>Оберіть ваші уподобання щодо їжі:</h1>
+            </div>
+            <div class="question-content">
+                <div class="list-check">
+                    <div class="item-check">
+                        <div class="item-check-button">
+                            <input type="checkbox" id="meat" name="food_preference[]" value="М'ясна їжа" />
+                        </div>
+                        <div class="item-check-text">
+                            <div>М'ясна їжа</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="list-check">
-                <div class="item-check">
-                    <div class="item-check-button">
-                        <input type="checkbox" id="vegetarian" name="food_preference[]" value="Вегетаріанська їжа" />
-                    </div>
-                    <div class="item-check-text">
-                        <div>Вегетаріанська їжа</div>
-                    </div>
-                </div>
-            </div>
-            <div class="list-check">
-                <div class="item-check">
-                    <div class="item-check-button">
-                        <input type="checkbox" id="vegan" name="food_preference[]" value="Веганська їжа" />
-                    </div>
-                    <div class="item-check-text">
-                        <div>Веганська їжа</div>
+                <div class="list-check">
+                    <div class="item-check">
+                        <div class="item-check-button">
+                            <input type="checkbox" id="vegetarian" name="food_preference[]"
+                                value="Вегетаріанська їжа" />
+                        </div>
+                        <div class="item-check-text">
+                            <div>Вегетаріанська їжа</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="list-check">
-                <div class="item-check">
-                    <div class="item-check-button">
-                        <input type="checkbox" id="spicy" name="food_preference[]" value="Гострі страви" />
+                <div class="list-check">
+                    <div class="item-check">
+                        <div class="item-check-button">
+                            <input type="checkbox" id="vegan" name="food_preference[]" value="Веганська їжа" />
+                        </div>
+                        <div class="item-check-text">
+                            <div>Веганська їжа</div>
+                        </div>
                     </div>
-                    <div class="item-check-text">
-                        <div>Гострі страви</div>
+                </div>
+                <div class="list-check">
+                    <div class="item-check">
+                        <div class="item-check-button">
+                            <input type="checkbox" id="spicy" name="food_preference[]" value="Гострі страви" />
+                        </div>
+                        <div class="item-check-text">
+                            <div>Гострі страви</div>
+                        </div>
                     </div>
                 </div>
             </div>
