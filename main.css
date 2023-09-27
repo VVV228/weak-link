@@ -46,3 +46,8 @@
 .item-radio-text {
   display: contents;
 }
+
+.survey-button {
+  text-align: right;
+  width: 1200px;
+}
