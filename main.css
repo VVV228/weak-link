@@ -9,9 +9,9 @@
 
 .survey-content{
   background: #b6b2b2;
-  padding: 5px;
   border-radius: 10px;
   margin: 0px 250px 0px 250px;
+  padding: 20px;
 }
 
 .survey-description{
@@ -24,6 +24,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.survey-button{
+  text-align: right;
 }
 
 /* Стилі для елементів */
