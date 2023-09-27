@@ -5,8 +5,18 @@
     justify-content: center;
     align-items: center;
   }
-  
+
 /* Стилі для елементів */
   .question-box {
     flex: 1;
+  }
+
+  /* Стилі для заголовка */
+.question-title {
+    flex: 1; 
+  }
+  
+  /* Стилі для вмісту */
+  .question-content {
+    flex: 1; 
   }
