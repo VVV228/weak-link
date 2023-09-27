@@ -1,5 +1,5 @@
 /* Стилі для контейнера */
-.flex-container {
+.questions {
     display: flex;
     flex-direction: column; 
     justify-content: center;
@@ -7,6 +7,6 @@
   }
   
 /* Стилі для елементів */
-  .flex-item {
+  .question-box {
     flex: 1;
   }
