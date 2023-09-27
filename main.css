@@ -4,6 +4,9 @@
 
 .survey-content{
   background: #b6b2b2;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 0px 250px 0px 250px;
 }
 
 .survey-description{
@@ -41,3 +44,11 @@
 .item-radio-text {
   display: contents;
 }
+
+.item-check-button {
+    display: contents;
+}
+.item-check-text {
+    display: contents;
+}
+
