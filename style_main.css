@@ -1,21 +1,22 @@
-*, *:before, *:after{
-    margin: 0;
-    padding: 0;
-  }
-  
-#header{
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
   height: 80px;
   background: #a4a1b8;
   margin-bottom: 20px;
   padding: 10px 0px;
 }
 
-.logo{
+.logo {
   display: contents;
-  
 }
 
-#logo{
+#logo {
   height: 80px;
   width: 80px;
   margin-left: 10px;
