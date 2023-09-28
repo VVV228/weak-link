@@ -1,8 +1,8 @@
-.test-button{
+.test-button {
     text-align: center;
 }
 
-#test-survey{
+#test-survey {
     padding: 5px;
     font-size: 20px;
     background: #2ee072;
@@ -14,15 +14,32 @@ td {
     padding: 10px 20px;
 }
 
-table{
-    background: #A9D6FF;
-    border: #A9D6FF;
-    border-radius: 4px;
-    border-width: 1px;
-    box-sizing: border-box;
+table {
+    border: none;
+    border-style: none;
 }
 
-th{
+table,
+tr,
+td,
+th {
+
+    border: none;
+
+}
+
+.table-header{
+    text-align:center;
+}
+
+.table {
+    background: #A9D6FF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 0px 100px;
+}
+
+th {
     padding: 10px 20px;
 }
 
