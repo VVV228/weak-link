@@ -1,3 +1,15 @@
+.test-button{
+    text-align: center;
+}
+
+#test-survey{
+    padding: 5px;
+    font-size: 20px;
+    background: #2ee072;
+    border: 1px;
+    border-radius: 4px;
+}
+
 td {
     padding: 10px 20px;
 }
@@ -22,8 +34,8 @@ th{
 }
 
 .box {
-    width: 403px;
-    height: 448px;
+    width: 400px;
+    height: 450px;
     margin: 10px;
     border-radius: 10px;
     background-color: rgb(202, 202, 202);
@@ -41,9 +53,4 @@ th{
     width: 328px;
     margin: 10px;
     font-size: 32px;
-    font-family: 'Open Sans';
-    font-weight: 600;
-    line-height: 41.50px;
-    word-wrap: break-word;
-    color: black;
 }
