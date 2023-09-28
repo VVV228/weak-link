@@ -1,3 +1,15 @@
+.test-button{
+    text-align: center;
+}
+
+#test-survey{
+    padding: 5px;
+    font-size: 20px;
+    background: #2ee072;
+    border: 1px;
+    border-radius: 4px;
+}
+
 td {
     padding: 10px 20px;
 }

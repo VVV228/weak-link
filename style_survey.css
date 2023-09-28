@@ -83,3 +83,15 @@ select {
 .item-check-text {
   display: contents;
 }
+
+
+.survey-button
+{
+  & button{
+    padding: 5px;
+    font-size: 20px;
+    background: #1ea752;
+    border: 1px;
+    border-radius: 4px;
+  } 
+}
