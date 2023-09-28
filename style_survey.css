@@ -1,5 +1,6 @@
 .survey-title{
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .survey-content{
@@ -11,6 +12,7 @@
 
 .survey-description{
   text-align: center;
+  margin-bottom: 20px;
 }
 
 /* Стилі для контейнера */
@@ -29,16 +31,42 @@
 .question-box {
   flex: 1;
   background: #ece7e7;
-  padding: 20px;
+  padding: 20px 30px;
   margin-bottom: 20px;
   border-radius: 10px;
 }
 
 /* Стилі для заголовка */
-.question-title {}
+.question-title {
+  margin-bottom: 10px;
+}
 
 /* Стилі для вмісту */
 .question-content {}
+
+.input-text{
+  & input[type=text] {
+    font-size: 16px;
+    width: 100%;
+    padding: 12px 20px;
+    border-width: 1px;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+}
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.list{
+  .item{
+    margin-bottom: 5px;
+  }
+}
 
 .item-radio-button {
   display: contents;
