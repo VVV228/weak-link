@@ -1,3 +1,25 @@
+.info-header {
+    padding-left: 15%;
+    width: 25%;
+}
+.info-text {
+    padding-left: 15%;
+    width: 25%;
+}
+.icon {
+    display: contents;
+}
+
+#bro {
+    height: 500px;
+    width: 500px;
+    padding-left: 60%;
+}
+
+.info2-header {
+    text-align: center;
+}
+
 .test-button {
     text-align: center;
 
