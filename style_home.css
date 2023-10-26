@@ -1,5 +1,5 @@
 body {
-background-color: #8EACCD;
+    background-color: #8EACCD;
 }
 
 .info {
@@ -31,6 +31,33 @@ background-color: #8EACCD;
 .info2 {
     text-align: center;
     margin: 0 35%;
+}
+
+.create-button {
+    border: 1px #F2E8F4 solid;
+    text-align: center;
+    width: 20%;
+    height: 20%;
+   
+    /* position:; */
+    box-shadow: 0px 4px 51px 5px rgba(53, 81, 112, 0.46);
+    border-radius: 42px;
+    margin: auto;
+}
+
+#create-survey {
+    /* left: 184.19px;
+    top: 36px; */
+    /* position: absolute;  */
+    text-align: center;
+    color: #F2E8F4;
+    font-size:100%;
+    /* font-family: Open Sans; */
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 44.10px;
+    background: none;
+    border: 0cap;
 }
 
 .test-button {
