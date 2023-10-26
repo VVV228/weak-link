@@ -46,8 +46,7 @@ body {
 }
 
 #create-survey {
-    /* left: 184.19px;
-    top: 36px; */
+  
     /* position: absolute;  */
     text-align: center;
     color: #F2E8F4;
@@ -58,11 +57,20 @@ body {
     line-height: 44.10px;
     background: none;
     border: 0cap;
+    
 }
 
 .test-button {
     text-align: center;
-
+    border: 1px #F2E8F4 solid;
+    text-align: center;
+    width: 20%;
+    height: 20%;
+    /* justify-content: space-around; */
+    /* position:; */
+    box-shadow: 0px 4px 51px 5px rgba(53, 81, 112, 0.46);
+    border-radius: 42px;
+    margin: auto;
 }
 
 button:hover {
@@ -70,12 +78,16 @@ button:hover {
 }
 
 #test-survey {
-    padding: 5px;
-    margin: 5px 0px 20px 0px;
-    font-size: 20px;
-    background: #2ee072;
-    border: 1px;
-    border-radius: 4px;
+    text-align: center;
+    color: #F2E8F4;
+    font-size:100%;
+    /* font-family: Open Sans; */
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 44.10px;
+    background: none;
+    border: 0cap;
+    
 }
 
 td {
@@ -104,7 +116,7 @@ th {
     background: #A9D6FF;
     border-radius: 20px;
     box-sizing: border-box;
-    margin: 0px 100px;
+    margin: 15px 100px;
 }
 
 th {
