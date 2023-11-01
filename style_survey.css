@@ -1,18 +1,33 @@
+body {
+  background-color: #9FA2D2;
+}
+
+.survey {
+  background-image: url("images/survey_bg.svg") ;
+
+}
+
 .survey-title {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  color:#355170 ;
+  font-family: Open Sans;
 }
 
 .survey-content {
-  background: #b6b2b2;
+  background: #F2E8F4;
   border-radius: 10px;
   margin: 0px 250px 0px 250px;
   padding: 20px;
+  
 }
 
 .survey-description {
   text-align: center;
   margin-bottom: 20px;
+  color:#355170 ;
+  font-family: Open Sans;
 }
 
 /* Стилі для контейнера */
@@ -23,6 +38,10 @@
   align-items: center;
 }
 
+.input-text input {
+  border: none;
+}
+
 .survey-button {
   text-align: right;
 }
@@ -30,19 +49,33 @@
 /* Стилі для елементів */
 .question-box {
   flex: 1;
-  background: #ece7e7;
+  background: #9FA2D2;
   padding: 20px 30px;
   margin-bottom: 20px;
   border-radius: 10px;
+  box-shadow: 3px 4px 133px rgba(235, 196, 241, 0.40);
 }
 
 /* Стилі для заголовка */
 .question-title {
   margin-bottom: 10px;
+  color: white;
+  font-size: 110%;
+  font-family: Open Sans;
+  font-weight: 600;
 }
 
 /* Стилі для вмісту */
-.question-content {}
+.question-content {
+  color: white;
+font-size: 110%;
+font-family: Open Sans;
+font-weight: 400;
+}
+
+.location{
+  border: none;
+}
 
 .input-text {
   & input[type=text] {
@@ -85,12 +118,14 @@ select {
 }
 
 
-.survey-button {
-  & button {
-    padding: 5px;
+.survey-button button {
+    padding: 15px;
+    color: #355170;
     font-size: 20px;
-    background: #1ea752;
-    border: 1px;
-    border-radius: 4px;
-  }
+    /* background: #1ea752; */
+    /* border-radius: 4px; */
+    box-shadow: 0px 4px 51px 5px rgba(53, 81, 112, 0.46); 
+    border-radius: 42px; 
+    border: 1px #F2E8F4 solid;
+    font-weight: 600;
 }

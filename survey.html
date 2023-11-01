@@ -16,6 +16,17 @@
                 <img id="logo" src="images/logo.jpg" alt="Opinion">
             </a>
         </div>
+        <div class="options">
+            <a href="survey.html">
+                <span>Пройти опитування</span>
+            </a>
+            <a href="survey.html">
+                <span>Створити опитування</span>
+            </a>
+            <a href="registration.html">
+                <span>Login/Sign up</span>
+            </a>
+        </div>
     </header>
     <div class="survey">
         <div class="survey-title">
@@ -77,7 +88,7 @@
                         <div class="list list-check">
                             <div class="item item-check">
                                 <div class="item-check-button">
-                                    <input type="checkbox" id="meat" name="food_preference[]" value="М'ясна їжа" />
+                                    <input type="checkbox" id="meat" class="food_preference[]" value="М'ясна їжа" />
                                 </div>
                                 <div class="item-check-text">
                                     <span>М'ясна їжа</span>
@@ -85,7 +96,7 @@
                             </div>
                             <div class="item item-check">
                                 <div class="item-check-button">
-                                    <input type="checkbox" id="vegetarian" name="food_preference[]"
+                                    <input type="checkbox" id="vegetarian" class="food_preference[]"
                                         value="Вегетаріанська їжа" />
                                 </div>
                                 <div class="item-check-text">
@@ -94,7 +105,7 @@
                             </div>
                             <div class="item item-check">
                                 <div class="item-check-button">
-                                    <input type="checkbox" id="vegan" name="food_preference[]" value="Веганська їжа" />
+                                    <input type="checkbox" id="vegan" class="food_preference[]" value="Веганська їжа" />
                                 </div>
                                 <div class="item-check-text">
                                     <span>Веганська їжа</span>
@@ -102,7 +113,7 @@
                             </div>
                             <div class="item item-check">
                                 <div class="item-check-button">
-                                    <input type="checkbox" id="spicy" name="food_preference[]" value="Гострі страви" />
+                                    <input type="checkbox" id="spicy" class="food_preference[]" value="Гострі страви" />
                                 </div>
                                 <div class="item-check-text">
                                     <span>Гострі страви</span>
@@ -116,7 +127,8 @@
                         <h3>Місце проживання:</h3>
                     </div>
                     <div class="question-content">
-                        <select name="location">
+                        <select class="location">
+                            <option value="" disabled selected>Виберіть місто</option>
                             <option value="Львів">Львів</option>
                             <option value="Вінниця">Вінниця</option>
                             <option value="Дніпро">Дніпро</option>
@@ -141,7 +153,7 @@
                             <option value="Черкаси">Черкаси</option>
                             <option value="Чернівці">Чернівці</option>
                             <option value="Чернігів">Чернігів</option>
-
+                            <option value="Чернігів">Інше</option>
                         </select>
 
                     </div>
