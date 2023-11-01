@@ -77,8 +77,7 @@ font-weight: 400;
   border: none;
 }
 
-.input-text {
-  & input[type=text] {
+.input-text input[type=text] {
     font-size: 16px;
     width: 100%;
     padding: 12px 20px;
@@ -86,7 +85,7 @@ font-weight: 400;
     box-sizing: border-box;
     border-radius: 4px;
   }
-}
+
 
 select {
   width: 100%;
@@ -95,11 +94,10 @@ select {
   border-radius: 4px;
 }
 
-.list {
-  .item {
+.list .item {
     margin-bottom: 5px;
   }
-}
+
 
 .item-radio-button {
   display: contents;
@@ -122,8 +120,6 @@ select {
     padding: 15px;
     color: #355170;
     font-size: 20px;
-    /* background: #1ea752; */
-    /* border-radius: 4px; */
     box-shadow: 0px 4px 51px 5px rgba(53, 81, 112, 0.46); 
     border-radius: 42px; 
     border: 1px #F2E8F4 solid;
