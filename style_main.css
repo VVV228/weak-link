@@ -23,3 +23,24 @@
   margin-left: 10px;
   border-radius: 40px;
 }
+
+.options span {
+  color: white;
+  font-size: 100%;
+  font-family: Open Sans;
+  font-weight: 300;
+  text-decoration: underline;
+  margin: 15px;
+  word-spacing: 5%;
+  padding-bottom: 20px;
+}
+
+.options a{
+  display:contents;
+}
+
+.options{
+  text-align: right;
+  float: right;
+  padding: 3% 0 0 0;
+}

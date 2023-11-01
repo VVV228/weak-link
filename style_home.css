@@ -2,16 +2,6 @@ body {
     background-color: #8EACCD;
 }
 
-.options {
-    color: white;
-    font-size: 100%;
-    font-family: Open Sans;
-    font-weight: 300;
-    text-decoration: underline;
-    text-align: right;
-    margin: 15px;
-}
-
 .line {
     top: 0vh;
     position: absolute;
