@@ -6,7 +6,7 @@
 }
 
 #header {
-  height: 80px;
+  height: 100px;
   padding: 10px 0px;
 }
 
@@ -21,6 +21,17 @@
   border-radius: 40px;
 }
 
+.options{
+  text-align: right;
+  float: right;
+  width: 80%;
+  padding-top: 25px;
+}
+
+.options a {
+  display:contents;
+} 
+
 .options span {
   color: white;
   font-size: 100%;
@@ -30,14 +41,4 @@
   margin: 15px;
   word-spacing: 5%;
   padding-bottom: 20px;
-}
-
-.options a{
-  display:contents;
-}
-
-.options{
-  text-align: right;
-  float: right;
-  padding: 3% 0 0 0;
 }

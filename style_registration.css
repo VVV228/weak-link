@@ -9,11 +9,12 @@
 body {
     background-color: #8EACCD;
   }
+
 .container{
     height: 100vh;
     width: 100%;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     background-color: #8EACCD;
     column-gap: 30px;
@@ -39,11 +40,12 @@ body {
     opacity: 0;
     pointer-events: none;
 }
-.form-content header{
+.form-content .form-title{
     font-size: 28px;
     font-weight: 600;
-    color:#355170 ;
+    color:#355170;
     text-align: center;
+    margin: auto 0;
 }
 form{
     margin-top: 30px;
