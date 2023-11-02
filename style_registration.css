@@ -5,6 +5,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+body {
+    background-color: #8EACCD;
+  }
 .container{
     height: 100vh;
     width: 100%;
@@ -35,7 +39,7 @@
     opacity: 0;
     pointer-events: none;
 }
-header{
+.form-content header{
     font-size: 28px;
     font-weight: 600;
     color:#355170 ;

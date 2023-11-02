@@ -71,6 +71,16 @@ body {
 font-size: 110%;
 font-family: Open Sans;
 font-weight: 400;
+
+}
+
+textarea{
+border: none;
+display: block;
+border-radius: 4px;
+width: 100%;
+box-sizing: border-box;
+resize: none;
 }
 
 .location{
@@ -99,16 +109,21 @@ select {
   }
 
 
-.item-radio-button {
+.item-radio-button { 
   display: contents;
+
+  appearance: none;
 }
 
 .item-radio-text {
   display: contents;
+ 
 }
+
 
 .item-check-button {
   display: contents;
+ 
 }
 
 .item-check-text {
@@ -124,4 +139,5 @@ select {
     border-radius: 42px; 
     border: 1px #F2E8F4 solid;
     font-weight: 600;
+    cursor: pointer;
 }
