@@ -98,11 +98,11 @@ form {
 }
 
 .bx-show{
-    background-image: image-set('images/eye-icon-hide.png');
+    background-image: image-set('images/eye-icon-show.png');
 }
 
 .bx-hide{
-    background-image: image-set('images/eye-icon-show.png');
+    background-image: image-set('images/eye-icon-hide.png');
 }
 
 .field button {
