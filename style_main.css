@@ -3,6 +3,8 @@
 *:after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 #header {
@@ -35,7 +37,6 @@
 .options span {
   color: white;
   font-size: 100%;
-  font-family: Open Sans;
   font-weight: 300;
   text-decoration: underline;
   margin: 15px;
