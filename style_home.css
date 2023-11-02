@@ -1,3 +1,8 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
 body {
     background-color: #8EACCD;
 }
@@ -63,7 +68,7 @@ body {
     padding-top: 10%;
     color: #F5F4F4;
     font-size: 30px;
-    font-family: Open Sans;
+
     font-weight: 700;
 }
 
@@ -71,7 +76,6 @@ body {
     padding: 8% 5% 0% 15%;
     color: #F5F4F4;
     font-size: 105%;
-    font-family: Open Sans;
     font-weight: 400;
 }
 
@@ -168,7 +172,6 @@ th {
     border: none;
     color: white;
     font-size: 25px;
-    font-family: Inter;
     padding: auto;
 
 }
@@ -203,7 +206,6 @@ th {
     padding-top: 5%;
     color: #F5F4F4;
     font-size: 20px;
-    font-family: Open Sans;
     font-weight: 550;
 
 }
