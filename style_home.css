@@ -10,8 +10,9 @@ body {
 .line {
     top: 0vh;
     position: absolute;
-    width: 100%;
+    width: 150%;
     overflow: hidden;
+    height: 100%;
     z-index: -1;
 }
 
@@ -68,7 +69,6 @@ body {
     padding-top: 10%;
     color: #F5F4F4;
     font-size: 30px;
-
     font-weight: 700;
 }
 
