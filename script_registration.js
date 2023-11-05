@@ -31,23 +31,28 @@ links.forEach(link => {
     })
 })
 
-// // Додамо подію для перевірки паролів
-// passwordFields[1].addEventListener("input", () => {
-//     if (passwordFields[0].value === passwordFields[1].value) {
-//         passwordsMatch = true;
-//         // Повідомлення про співпадання паролів
-//         message.textContent = "Паролі співпадають";
-//     } else {
-//         passwordsMatch = false;
-//         // Повідомлення про невідповідність паролів
-//         message.textContent = "Паролі не співпадають";
-//     }
-// });
+// Отримати посилання на обидва поля паролів
+const password1 = document.getElementById("password1");
+const password2 = document.getElementById("password2");
 
-// // Додамо подію для натискання кнопки "Зареєструватись"
-// registerButton.addEventListener("click", (e) => {
-//     if (!passwordsMatch) {
-//         e.preventDefault(); // Блокуємо перехід, якщо паролі не співпадають
-//         message.textContent = "Будь ласка, виправте помилку в паролях.";
-//     }
-// });
+// Додати обробник події "input" до обох полів паролів
+password1.addEventListener("input", checkPasswords);
+password2.addEventListener("input", checkPasswords);
+
+// Функція для перевірки паролів
+function checkPasswords() {
+    const password1Value = password1.value;
+    const password2Value = password2.value;
+    
+    const errorText = document.getElementById("errorText");
+
+    // Перевірка, чи паролі співпадають
+    if (password1Value === password2Value) {
+        // Паролі співпадають, прибрати повідомлення про помилку
+        errorText.innerText = "";
+    } else {
+        // Паролі не співпадають, вивести повідомлення про помилку
+        errorText.innerText = "Паролі не співпадають!";
+        errorText.style.color = "red";
+    }
+}
