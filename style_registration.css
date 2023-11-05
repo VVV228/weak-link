@@ -206,6 +206,9 @@ a.google span {
     color: red;
 }
 
+#errorText1{
+    color: red;
+}
 .email-error{
 color: red;
 }
