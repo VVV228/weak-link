@@ -202,3 +202,10 @@ a.google span {
     opacity: 0.6;
     color: #232836;
 }
+#errorText{
+    color: red;
+}
+
+.email-error{
+color: red;
+}

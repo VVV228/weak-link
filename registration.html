@@ -43,14 +43,14 @@
                 <div class="form-title">Login</div>
                 <form action="#">
                     <div class="field input-field">
-                        <input type="email" placeholder="Email" class="input">
+                        <input type="email" placeholder="Email" class="input email">
                     </div>
-
+                    <div class="email-error" id="email-error"></div>
                     <div class="field input-field">
-                        <input type="password" placeholder="Пароль" class="password">
+                        <input type="password" placeholder="Пароль" class="password" id="password3">
                         <i class='bx bx-hide eye-icon'></i>
                     </div>
-
+                    <div class="message" id="errorText"></div>
                     <div class="form-link">
                         <a href="#" class="forgot-pass">Забули пароль?</a>
                     </div>
@@ -58,6 +58,7 @@
                     <div class="field button-field">
                         <button>Увійти</button>
                     </div>
+                    
                 </form>
 
                 <div class="form-link">
@@ -90,9 +91,9 @@
                 <div class="form-title">Signup</div>
                 <form action="#">
                     <div class="field input-field">
-                        <input type="email" placeholder="Email" class="input">
+                        <input type="email" placeholder="Email" class="input email">
                     </div>
-
+                    <div class="email-error" id="email-error"></div>
                     <div class="field input-field">
                         <input type="password" placeholder="Створити пароль" class="password" id="password1">
                     </div>
