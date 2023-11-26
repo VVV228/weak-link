@@ -1,27 +1,45 @@
 const forms = document.querySelector(".forms"),
-    pwShowHide = document.querySelectorAll(".eye-icon"),
     links = document.querySelectorAll(".link");
 passwordFields = document.querySelectorAll(".password");
 
 
 let passwordsMatch = false;
 
-pwShowHide.forEach(eyeIcon => {
-    eyeIcon.addEventListener("click", () => {
-        let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
+$(document).ready(function() {
+  const pwShowHide = $(".eye-icon");
 
-        pwFields.forEach(password => {
-            if (password.type === "password") {
-                password.type = "text";
-                eyeIcon.classList.replace("bx-hide", "bx-show");
-                return;
-            }
-            password.type = "password";
-            eyeIcon.classList.replace("bx-show", "bx-hide");
-        })
+  pwShowHide.on("click", function() {
+    const pwFields = $(this).closest(".forms").find(".password");
 
-    })
-})
+    pwFields.each(function() {
+      if ($(this).attr("type") === "password") {
+        $(this).attr("type", "text");
+        $(this).siblings(".eye-icon").removeClass("bx-hide").addClass("bx-show");
+      } else {
+        $(this).attr("type", "password");
+        $(this).siblings(".eye-icon").removeClass("bx-show").addClass("bx-hide");
+      }
+    });
+  });
+});
+
+
+// pwShowHide.forEach(eyeIcon => {
+//     eyeIcon.addEventListener("click", () => {
+//         let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
+
+//         pwFields.forEach(password => {
+//             if (password.type === "password") {
+//                 password.type = "text";
+//                 eyeIcon.classList.replace("bx-hide", "bx-show");
+//                 return;
+//             }
+//             password.type = "password";
+//             eyeIcon.classList.replace("bx-show", "bx-hide");
+//         })
+
+//     })
+// })
 
 
 
