@@ -1,0 +1,143 @@
+body {
+  background-color: #9FA2D2;
+}
+
+.survey {
+  background-image: url("images/survey_bg.svg") ;
+
+}
+
+.survey-title {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  color:#355170 ;
+}
+
+.survey-content {
+  background: #F2E8F4;
+  border-radius: 10px;
+  margin: 0px 250px 0px 250px;
+  padding: 20px;
+  
+}
+
+.survey-description {
+  text-align: center;
+  margin-bottom: 20px;
+  color:#355170 ;
+}
+
+/* Стилі для контейнера */
+.survey-questions {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-text input {
+  border: none;
+}
+
+.survey-button {
+  text-align: right;
+}
+
+/* Стилі для елементів */
+.question-box {
+  flex: 1;
+  background: #9FA2D2;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 4px 133px rgba(235, 196, 241, 0.40);
+}
+
+/* Стилі для заголовка */
+.question-title {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 110%;
+  font-weight: 600;
+}
+
+/* Стилі для вмісту */
+.question-content {
+  color: white;
+  font-size: 110%;
+  font-weight: 400;
+
+}
+
+textarea{
+  border: none;
+  display: block;
+  border-radius: 4px;
+  width: 100%;
+  /* box-sizing: border-box; */
+  resize: none;
+
+  font-size: 16px;
+  font-weight: 400;
+  padding: 5px;
+}
+
+.location{
+  border: none;
+}
+
+.input-text input[type=text] {
+    font-size: 16px;
+    width: 100%;
+    padding: 12px 20px;
+    border-width: 1px;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.list .item {
+    margin-bottom: 5px;
+  }
+
+
+.item-radio-button { 
+  display: contents;
+
+  appearance: none;
+}
+
+.item-radio-text {
+  display: contents;
+ 
+}
+
+
+.item-check-button {
+  display: contents;
+ 
+}
+
+.item-check-text {
+  display: contents;
+}
+
+
+.survey-button button {
+    padding: 15px;
+    color: #355170;
+    font-size: 20px;
+    box-shadow: 0px 4px 51px 5px rgba(53, 81, 112, 0.46); 
+    border-radius: 42px; 
+    border: 1px #F2E8F4 solid;
+    font-weight: 600;
+    cursor: pointer;
+}

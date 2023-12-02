@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup</title>
+
+
+    <link rel="stylesheet" type="text/css" href="style_registration.css">
+    <link rel="stylesheet" type="text/css" href="style_main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script_header.js"></script>
+
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="home.html">
+                <img id="logo" src="images/logo.jpg" alt="Opinion">
+            </a>
+        </div>
+        <div class="options">
+            <a href="home.html">
+                <span>Home</span>
+            </a>
+            <a href="survey.html">
+                <span>Пройти опитування</span>
+            </a>
+            <a href="survey.html">
+                <span>Створити опитування</span>
+            </a>
+          
+        </div>
+
+    </header>
+
+    <section class="container forms">
+        <div class="form login">
+            <div class="form-content">
+                <div class="form-title">Login</div>
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input email">
+                    </div>
+                    <div class="email-error" id="email-error"></div>
+                    <div class="field input-field">
+                        <input type="password" placeholder="Пароль" class="password" id="password3">
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+                    <div class="message" id="errorText1"></div>
+                    <div class="form-link">
+                        <a href="#" class="forgot-pass">Забули пароль?</a>
+                    </div>
+
+                    <div class="field button-field">
+                        <button>Увійти</button>
+                    </div>
+                    
+                </form>
+
+                <div class="form-link">
+                    <span>Не маєте акаунту? <a href="#" class="link signup-link">Signup</a></span>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="media-options">
+                <a href="#" class="field facebook">
+                    <img src="#" alt="" class="facebook-img">
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+
+            <div class="media-options">
+                <a href="#" class="field google">
+                    <img src="#" alt="" class="google-img">
+                    <span>Login with Google</span>
+                </a>
+            </div>
+
+        </div>
+
+
+
+        <div class="form signup">
+            <div class="form-content">
+                <div class="form-title">Signup</div>
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input email">
+                    </div>
+                    <div class="email-error" id="email-error"></div>
+                    <div class="field input-field">
+                        <input type="password" placeholder="Створити пароль" class="password" id="password1">
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Підтвердити пароль" class="password" id="password2">
+                        
+                    </div>
+                    <div class="message" id="errorText"></div>
+
+                    
+                    <div class="field button-field">
+                        <button class="link">Зареєструватись</button>
+                    </div>
+
+                </form>
+
+                <div class="form-link">
+                    <span>Уже є акаунт? <a href="#" class="link login-link">Login</a></span>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="media-options">
+                <a href="#" class="field facebook">
+                    <img src="#" alt="" class="facebook-img">
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+
+            <div class="media-options">
+                <a href="#" class="field google">
+                    <img src="#" alt="" class="google-img">
+                    <span>Login with Google</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="script_registration.js"></script>
+
+    <footer>
+        <p>Made by Nata, Vanya, Diana</p>
+        <p><a href="https://github.com/VVV228/weak-link">GIT HUB</a></p>
+      </footer>
+
+</body>
+
+</html>
