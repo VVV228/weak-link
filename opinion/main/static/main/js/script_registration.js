@@ -20,6 +20,8 @@ $(document).ready(function() {
     link.addEventListener("click", e => {
         e.preventDefault();
         forms.classList.toggle("show-signup");
+        const emailError = document.querySelectorAll(".email-error");
+        console.log(emailError)
         emailError.forEach(msg => {
             msg.innerText = "";
                 
@@ -43,22 +45,6 @@ $(document).ready(function() {
 });
 
 
-// pwShowHide.forEach(eyeIcon => {
-//     eyeIcon.addEventListener("click", () => {
-//         let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
-
-//         pwFields.forEach(password => {
-//             if (password.type === "password") {
-//                 password.type = "text";
-//                 eyeIcon.classList.replace("bx-hide", "bx-show");
-//                 return;
-//             }
-//             password.type = "password";
-//             eyeIcon.classList.replace("bx-show", "bx-hide");
-//         })
-
-//     })
-// })
 
 
 document.addEventListener('ready', ()=>{
@@ -69,7 +55,7 @@ document.addEventListener('ready', ()=>{
 const emailInput = document.querySelectorAll(".email");
 const passwordError1 = document.getElementById("errorText");
 const passwordError3 = document.getElementById("errorText1");
-const emailError = document.querySelectorAll(".email-error");
+
 
 // Додати обробник події "input" до обох полів паролів
 
@@ -85,9 +71,11 @@ function checkPasswords() {
     if (password1Value === password2Value) {
         // Паролі співпадають, прибрати повідомлення про помилку
         errorText.innerText = "";
+        return true;
     } else {
         // Паролі не співпадають, вивести повідомлення про помилку
         errorText.innerText = "Паролі не співпадають!";
+        return false;
     }
 }
 
