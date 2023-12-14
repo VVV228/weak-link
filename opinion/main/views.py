@@ -10,10 +10,13 @@ def home (request):
 def registration (request):
     return render(request, 'main/registration.html')
 
-def login (request):
+def login(request):
     if request.method == 'POST':
-        print('post')
-    return redirect('/registration')
+        email = request.POST.get('email')  # Отримати значення поля електронної пошти
+        password = request.POST.get('password')  # Отримати значення поля пароля
+        print('Email:', email)
+        print('Пароль:', password)
+    return render(request, 'main/registration.html') 
 
 def survey (request):
     return render(request, 'main/survey.html')
