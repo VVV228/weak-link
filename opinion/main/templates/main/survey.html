@@ -1,35 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'main/layout.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Опитування</title>
-    <link rel="stylesheet" type="text/css" href="style_main.css">
-    <link rel="stylesheet" type="text/css" href="style_survey.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="script_header.js"></script>
-</head>
+{% block link %} 
+<link rel="stylesheet" type="text/css" href="static/main/css/style_survey.css">
 
-<body>
-    <header id="header">
-        <div class="logo">
-            <a href="home.html">
-                <img id="logo" src="images/logo.jpg" alt="Opinion">
-            </a>
-        </div>
-        <div class="options">
-            <a href="survey.html">
-                <span>Пройти опитування</span>
-            </a>
-            <a href="survey.html">
-                <span>Створити опитування</span>
-            </a>
-            <a href="registration.html">
-                <span>Login/Sign up</span>
-            </a>
-        </div>
-    </header>
+{% endblock %}
+    
+    
+ 
+
+
+{% block content %}
     <div class="survey">
         <div class="survey-title">
             <h2>Назва опитування</h2>
@@ -176,12 +156,7 @@
         </div>
 
     </div>
-    <footer>
-        <p>Made by Nata, Vanya, Diana</p>
-        <p><a href="https://github.com/VVV228/weak-link">GIT HUB</a></p>
-      </footer>
 
 
-</body>
 
-</html>
+{% endblock %}

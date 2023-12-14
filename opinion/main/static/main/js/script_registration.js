@@ -1,12 +1,31 @@
-const forms = document.querySelector(".forms"),
-    links = document.querySelectorAll(".link");
+
+    
 passwordFields = document.querySelectorAll(".password");
 
 
 let passwordsMatch = false;
 
 $(document).ready(function() {
+    const forms = document.querySelector(".forms");
+    const links = document.querySelectorAll(".link");
+    const password1 = document.getElementById("password1");
+    const password2 = document.getElementById("password2");
+    const password3 = document.getElementById("password3");
+    password1.addEventListener("input", checkPasswords);
+    password2.addEventListener("input", checkPasswords);
+    password3.addEventListener("input", checkPasswordslen);
   const pwShowHide = $(".eye-icon");
+
+  links.forEach(link => {
+    link.addEventListener("click", e => {
+        e.preventDefault();
+        forms.classList.toggle("show-signup");
+        emailError.forEach(msg => {
+            msg.innerText = "";
+                
+        })
+    })
+})
 
   pwShowHide.on("click", function() {
     const pwFields = $(this).closest(".forms").find(".password");
@@ -42,29 +61,18 @@ $(document).ready(function() {
 // })
 
 
+document.addEventListener('ready', ()=>{
 
+})
 // Отримати посилання на обидва поля паролів
-const password1 = document.getElementById("password1");
-const password2 = document.getElementById("password2");
-const password3 = document.getElementById("password3");
+
 const emailInput = document.querySelectorAll(".email");
 const passwordError1 = document.getElementById("errorText");
 const passwordError3 = document.getElementById("errorText1");
 const emailError = document.querySelectorAll(".email-error");
-links.forEach(link => {
-    link.addEventListener("click", e => {
-        e.preventDefault();
-        forms.classList.toggle("show-signup");
-        emailError.forEach(msg => {
-            msg.innerText = "";
-                
-        })
-    })
-})
+
 // Додати обробник події "input" до обох полів паролів
-password1.addEventListener("input", checkPasswords);
-password2.addEventListener("input", checkPasswords);
-password3.addEventListener("input", checkPasswordslen);
+
 
 // Функція для перевірки паролів
 function checkPasswords() {

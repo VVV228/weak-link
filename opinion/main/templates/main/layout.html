@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}  {% endblock %}</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../static/main/css/style_main.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="../../static/main/js/script_header.js"></script>
+    {% block link %} {% endblock %}
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="{% url 'home' %}">
+                <img id="logo" src="../../static/main/img/logo.jpg" alt="Opinion">
+            </a>
+        </div>
+        <div class="options">
+            <a href="{% url 'home' %}">
+                <span>Home</span>
+            </a>
+            <a href="{% url 'survey' %}">
+                <span>Пройти опитування</span>
+            </a>
+            <a href="{% url 'registration' %}">
+                <span>Login/Sign up</span>
+            </a>
+        </div>
+
+    </header>
+
+    {% block content %}
+        {% endblock %}
+        <footer>
+            <p>Made by Nata, Vanya, Diana</p>
+            <p><a href="https://github.com/VVV228/weak-link">GIT HUB</a></p>
+          </footer>
+</body>
+</html>

@@ -9,3 +9,6 @@ def home (request):
 
 def registration (request):
     return render(request, 'main/registration.html')
+
+def survey (request):
+    return render(request, 'main/survey.html')

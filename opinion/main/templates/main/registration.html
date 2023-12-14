@@ -1,42 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'main/layout.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login and Signup</title>
+    {% block title %} Registration {% endblock %}
+    {% block link %} 
+    <link rel="stylesheet" type="text/css" href="static/main/css/style_registration.css">
+    <script src="/static/main/js/script_registration.js"></script>
 
-
-    <link rel="stylesheet" type="text/css" href="style_registration.css">
-    <link rel="stylesheet" type="text/css" href="style_main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="script_header.js"></script>
+    {% endblock %}
 
 
-</head>
-
-<body>
-    <header id="header">
-        <div class="logo">
-            <a href="home.html">
-                <img id="logo" src="images/logo.jpg" alt="Opinion">
-            </a>
-        </div>
-        <div class="options">
-            <a href="home.html">
-                <span>Home</span>
-            </a>
-            <a href="survey.html">
-                <span>Пройти опитування</span>
-            </a>
-            <a href="survey.html">
-                <span>Створити опитування</span>
-            </a>
-          
-        </div>
-
-    </header>
+{% block content %}
 
     <section class="container forms">
         <div class="form login">
@@ -138,13 +110,8 @@
     </section>
 
 
-    <script src="script_registration.js"></script>
 
-    <footer>
-        <p>Made by Nata, Vanya, Diana</p>
-        <p><a href="https://github.com/VVV228/weak-link">GIT HUB</a></p>
-      </footer>
 
-</body>
+  
 
-</html>
+{% endblock %}
